@@ -1,2 +1,3 @@
-# Cursos-Dio
- Meus cógidos dos cursos pela plataforma DIO
+# Cursos Dio
+ Repositório dedicado a prganização dos meus estudos
+ pela plataforma DIO
