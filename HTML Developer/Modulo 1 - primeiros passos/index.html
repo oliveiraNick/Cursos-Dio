@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo do Aprendizado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="inicio">Introdução ao HTML5</h1>
+    <hr>
+
+    <!-- Menu de Indices -->
+    <ul>
+        <li><a href="#sobre-o-html">Sobre o HTML</a></li>
+        <li><a href="#como-funciona">Como o HTML Funciona?</a></li>
+
+        <li><a href="#tags">Tags em HTML</a>
+            <ul style="list-style-type: circle">
+                <li><a href="#estrutura-basica">Tags da Estrutura Básica</a></li>
+                <li><a href="#formatacao">Tags de Formatação</a></li>
+                <li><a href="#semanticas">Tags Semânticas</a></li>
+                <li><a href="#conteudo">Tags de Conteúdo</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#sobre">Sobre</a></li>
+    </ul>
+    <!-- Fim do Menu -->
+
+    <h2 id="sobre-o-html">Sobre o HTML</h2>
+    <p>
+        Primeiramente, devemos deixar claro que o <abbr title="HyperText Mackup Language">HTML</abbr>
+        <strong>não</strong>
+        é uma linguagem de programação, é uma ferramenta utilizada no desenvolvimento web para definir a estrutura
+        da página, sem poder criar condições, interatividade ou um conteúdo dinâmico (isso sem o uso de outras
+        feramentas),
+        chamada de <strong>Linguagem de Marcação</strong>. <br>
+        Isso, claro, podemos encontrar na internet da seguinte forma:
+    <blockquote>
+        o HTML é como o esqueleto de uma página web, organizando
+        os elementos como texto, imagens, vídeos e links.
+        <hr>
+        <strong>fontes:</strong> <a
+            href="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics"
+            target="_blank">mozila</a>
+    </blockquote>
+    </p>
+
+    <h2 id="como-funciona">Como o HTML Funciona?</h2>
+    <p>
+        A estrutura geral de uma página é formada pelo HTML, um arquivo .html mais especificamente. Para cada página no
+        nosso site
+        temos um arquivo desses como estrutura básica. <br>
+        Dentro dele temos uma sequência de <strong>tags</strong> que dão sentido ao texto, elas permitem que o
+        navegador
+        consiga ler, interpretar e apresentar aquela página corretamente para o usuário. De forma simples:
+    <blockquote>
+        As tags em HTML, também chamadas de elementos, são instruções
+        que definem a estrutura e o significado do conteúdo em uma página web.
+        Elas são como blocos de montar que organizam e formatam os elementos da página,
+        como texto, imagens, vídeos, links, formulários e outros.
+        <hr>
+        <strong>fontes:</strong> <a
+            href="https://rockcontent.com/br/blog/html/#:~:text=Apesar%20dos%20nomes%20complicados%2C%20o,o%20que%20%C3%A9%20um%20hipertexto%3F"
+            target="_blank">rock content</a>,
+        <a href="https://www.locaweb.com.br/blog/temas/codigo-aberto/html-guia-completo-sobre-a-principal-linguagem-da-internet/#:~:text=modificam%20seu%20comportamento.-,Tags,dos%20elementos%20contidos%20dentro%20delas."
+            target="_blank">locaweb</a>
+    </blockquote>
+    </p>
+
+    <h2 id="tags">Tags em HTML</h2>
+    <p>
+        Ao aprender essa ferramenta devemos ter em mente que a semântica faz diferença, usar uma ou outra tag, mesmo que
+        ambas tenham o mesmo resultado visual, tem mais a ver com a interpretação do navegador do que com o resultado
+        visual que o usuário vai receber. <br>
+        Podemos definir as tags em diferentes tipo (ou em diferentes funcionalidades), como por exemplo:
+    </p>
+
+    <h3 id="estrutura-basica">Tags da Estrutura Básica</h3>
+    <p>
+        Fazem parte da estrutura básica de todo arquivo HTML, alguams delas são:
+    </p>
+    <ul>
+        <li>
+            <strong>&lt;!DOCTYPE html&gt;:</strong> <!-- !DOCTYPE html -->
+            Tag fundamental para a construção da página web, ela diz ao navegador que se trata de um arquivo .html
+            permitindo uma melhor interpretação do mesmo;
+        </li>
+        <li>
+            <strong>&lt;html&gt;:</strong> <!-- html -->
+            Define o início do HTML;
+        </li>
+        <li>
+            <strong>&lt;head&gt;:</strong> <!-- head -->
+            Dentro dessa tag encontramos as configurações do arquivo, como títulos e metadados;
+        </li>
+        <li>
+            <strong>&lt;body&gt;:</strong> <!-- body -->
+            O corpo da nossa página, nessa tag iremos colocar o conteúdo que irá aparecer para o usuário;
+        </li>
+    </ul>
+
+    <h3 id="formatacao">Tags de Formatação</h3>
+    <p>
+        Controlam questões visuais e de semântica do conteúdo, sendo algumas delas:
+    </p>
+    <ul>
+        <li>
+            <strong>&lt;p&gt;:</strong> <!-- p -->
+            Define um texto como um parágrafo;
+        </li>
+        <li>
+            <strong>&lt;strong&gt;:</strong> <!-- strong -->
+            Deixa um texto em <strong>negrito</strong>, dando destaque a ele;
+        </li>
+        <li>
+            <strong>&lt;em&gt;:</strong> <!-- em -->
+            Da ênfase ao texto, deixando ele no estilo <em>itálico</em>;
+        </li>
+        <li>
+            <strong>&lt;br&gt;:</strong> <!-- br -->
+            Faz uma quebra de linha em qualquer lugar do texto;
+        </li>
+        <li>
+            <strong>&lt;u&gt;:</strong> <!-- u -->
+            Destaca o texto <u>sublinhando</u> ele;
+        </li>
+        <li>
+            <strong>&lt;h1&gt; ao &lt;h6&gt;:</strong> <!-- h1 ao h6 -->
+            Define a hierarquia do título, sendo 1 título printipal (h1) e 5 subtítulos (h2, h3, h4, h5 , h6).
+        </li>
+    </ul>
+
+    <h3 id="semanticas">Tags Semânticas</h3>
+    <p>
+        Definem o significado do conteúdo da página, sendo algumas delas:
+    </p>
+    <ul>
+        <li>
+            <strong>&lt;header&gt;:</strong> <!-- header -->
+            Define o cabeçalho da página;
+        </li>
+        <li>
+            <strong>&lt;footer&gt;:</strong> <!-- footer -->
+            Define o rodapé da página;
+        </li>
+        <li>
+            <strong>&lt;article&gt;:</strong> <!-- article -->
+            Define um texto como um artigo independente;
+        </li>
+        <li>
+            <strong>&lt;main&gt;:</strong> <!-- main -->
+            Define o conteúdo principal da página;
+        </li>
+    </ul>
+
+    <h3 id="conteudo">Tags de Conteúdo</h3>
+    <p>
+        Serve para adicionar outros tipo te conteúdo na página fora texto, sendo algumas delas:
+    </p>
+    <ul>
+        <li>
+            <strong>&lt;a&gt;:</strong> <!-- a -->
+            Utiliza-se quando deseja adicionar um link externo clicável a página.
+        </li>
+        <li>
+            <strong>&lt;img&gt;:</strong> <!-- img -->
+            Como o nome mesmo diz, é utilizado para adicionar imagens ao conteúdo;
+        </li>
+        <li>
+            <strong>&lt;ul&gt;:</strong> <!-- ul -->
+            Utilizada quando queremos adicionar uma lista não ordenada ao conteúdo;
+        </li>
+        <li>
+            <strong>&lt;table&gt;:</strong> <!-- table -->
+            Essa tag é usada quando se deseja adicionar uma tabela ao conteúdo.
+        </li>
+    </ul>
+
+    <hr>
+
+    <p id="sobre"> Para conhecer um pouco sobre essa página <a href="about.html" target="_self"><strong>clique aqui</strong></a>. </p>
+    <p><a href="#inicio">voltar ao início</a></p>
+</body>
+
+</html>
