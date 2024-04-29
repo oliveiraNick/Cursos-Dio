@@ -2,18 +2,17 @@ from abc import *
 
 
 class Conta:
-    def __init__(self, saldo:float, numero:int, agencia:str, cliente, historico):
+    def __init__(self, saldo: float, numero: int, agencia: str, cliente, historico):
         self._saldo = saldo
         self._numero = numero
         self._agencia = agencia
         self._cliente = cliente
         self._historico = historico
 
-
-    #configurando o @classmethod e o acesso aos atributos privados da conta
+    # configurando o @classmethod e o acesso aos atributos privados da conta
     @classmethod
     def nova_conta(cls, cliente, numero):
-        return cls (numero, cliente)
+        return cls(numero, cliente)
 
     @property
     def saldo(self):
@@ -35,9 +34,8 @@ class Conta:
     def historico(self):
         return self._historico
 
-
-    #Configurando as funções de saque e depósito da conta
-    def saque(self, valor:float):
+    # Configurando as funções de saque e depósito da conta
+    def saque(self, valor: float):
         excedeu_saldo = valor > self.saldo
 
         if excedeu_saldo:
@@ -102,4 +100,3 @@ class PessoaFisica(Cliente):
         self._nome = nome
         self._cpf = cpf
         self._data_nascimento = data_nascimento
-
